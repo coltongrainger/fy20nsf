@@ -12,7 +12,7 @@ bibliography: /home/colton/coltongrainger.bib
 
 ---
 
-I propose to continue work on the classification and reduction of meteorological data from binary image files (e.g., digital scans of US Naval logbooks) using methods in statistics, applied topology, and the digital humanities.
+I propose to continue work on the classification and reduction of meteorological data from binary image files (e.g., digital scans of US naval logbooks) using methods in statistics, applied topology, and the digital humanities.
 
 As a student visitor at the National Center for Atmospheric Research (NCAR), I am currently extending my project^[Source code: <https://github.com/NCAR/rda-image-archive>.] as a summer intern to design a metadata schema for a ~60 TB collection of scanned documents in order to reduce each ~6 MB image in a document to a ~2 KB time series of observed data for the International Comprehensive Ocean-Atmosphere Data Set (ICOADS).
 
@@ -40,7 +40,7 @@ To fix ideas: a given image is represented by the faithful^[To avoid technicalit
 
 Most importantly, climate modellers need rich datasets. That is, researchers using data assimilation techniques for climate reanalyses prior to 1950, owing to a lack of available meteorological data over the earth's oceans, need *both* a credible estimate $\hat{\lambda}$ for each available platform's faithful location $\lambda$ and a credible estimate $\hat\sigma_i$ for all of each available platform's faithful observation time series $\sigma_i$. In the status quo, when human transcribers independently produce^[E.g., via Brohan's citizen science project *OldWeather*.] 3 credible estimates $\hat{\lambda}_j$ within some acceptable distance^[Under a metric on the function space $C^0(D, M)$, or, if handwriting is smeared, under a Wasserstein metric.] of each other, an average $\bar{\lambda}$ (along with the associated $\bar{\sigma_i}$) is then incorporated as ~300KB of data into a future release of ICOADS.
   
-To facilitate human and machine transcription efforts, researchers need *minimal* metadata to obtain image subsets from NCAR based on geospatial queries.^[E.g., a query for all images from platforms in the North Pacific Ocean between 1902 and 1904.] Minimal metadata provides a granular partition of images into 12 ocean basins and their year of occurrence. To obtain this minimal metadata from an image provider, this summer I developed a agnostic metadata file exchange format. I am to use the collected minimal metadata as "initial metadata" for image classification.
+To facilitate human and machine transcription efforts, researchers need *minimal* metadata to obtain image subsets from NCAR based on geospatial queries.^[E.g., a query for all images from platforms in the North Pacific Ocean between 1902 and 1904.] Minimal metadata provides a granular partition of images into 12 ocean basins and their year of occurrence. To obtain this minimal metadata from an image provider, this summer I developed an agnostic metadata file exchange format. I am to use the collected minimal metadata as "initial metadata" for image classification.
 
 ### What methods will be developed to support image classification and metadata reduction?
 
